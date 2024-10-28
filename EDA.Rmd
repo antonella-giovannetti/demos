@@ -1,0 +1,21 @@
+---
+title: "Analyse exploratoire des données de l'enquête sur la participation électorale (2017)"
+output: html_document
+---
+
+# Introduction
+Ce document présente une analyse exploratoire des données de l'enquête sur la participation électorale de 2017.
+
+## Chargement des données
+
+Nous commençons par charger les données pour explorer leur structure et leur contenu.
+
+```{r}
+data <- read.csv("data_abs.csv", header = TRUE, sep = ",")
+head(data)
+
+str(data)
+summary(data)
+
+
+
